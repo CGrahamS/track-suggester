@@ -21,19 +21,26 @@ $(function() {
     var javaTrack = "should pursue the Java/Android track!";
     var tieTrack = "can't decide between the PHP/Drupal or the Java/Android tracks. Try this question to break the tie!"
 
-    console.log(track);
-    if (track >= 13) {
-      $("#track").empty().append(phpTrack);
-    } else if (track === 11) {
-      $("#track").empty().append(tieTrack);
-    } else if (track >= 8) {
-        $("#track").empty().append(cssTrack);
-    } else {
-      $("#track").empty().append(javaTrack);
-    }
+    if (name) {
+      if (track) {
+        if (track >= 13) {
+          $("#track").empty().append(phpTrack);
+        } else if (track === 11) {
+          $("#track").empty().append(tieTrack);
+        } else if (track >= 8) {
+            $("#track").empty().append(cssTrack);
+        } else {
+          $("#track").empty().append(javaTrack);
+        }
 
-    $(".name").empty().append(name);
-    $("#output").slideDown();
+        $(".name").empty().append(name);
+        $("#output").fadeIn();
+      } else {
+        alert("Please pick some options!")
+      }
+    } else {
+      alert("You forgot to enter your name!")
+    }
     event.preventDefault();
   });
 });
