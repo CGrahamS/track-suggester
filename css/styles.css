@@ -1,0 +1,23 @@
+.container {
+  max-width: 57%;
+}
+
+.page-header,
+.my-intro p,
+.my-intro h3,
+#survey-title {
+  text-align: center;
+}
+
+.my-intro {
+    margin: 1% auto;
+}
+
+.my-intro p {
+  font-size: 0.95em;
+}
+
+#survey-title{
+  margin-top: 6%;
+  margin-bottom: 3%;
+}
