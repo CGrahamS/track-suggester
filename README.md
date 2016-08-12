@@ -23,7 +23,7 @@ _Depending on the options selected, survey breaks at track values 8, 11 and 23 d
 
 * _Value 8 will sometimes suggest CSS track with only one CSS related option selected._
 * _Value 11 will display a tie track._
-* _Value 23 will display suggest the CSS track with no CSS related options selected._
+* _Value 23 will suggest the CSS track with no CSS related options selected._
 
 ## Support and contact details
 
