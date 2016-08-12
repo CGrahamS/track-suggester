@@ -1,16 +1,7 @@
-//back end
 var result = function(music, vacation, beer, weapon, taco) {
   return music + vacation + beer + weapon + taco;
 };
-var toCss = function(category) {
-   return category +1;
- };
-var toPhp = function(category) {
-  return category +10;
-};
 
-
-//front end
 $(function() {
   $("#blanks form").submit(function(event) {
     var name = $("input#name").val();
@@ -23,13 +14,13 @@ $(function() {
     var phpTrack = "should pursue the PHP/Drupal track!";
     var cssTrack = "should pursue the CSS/Design track!";
     var javaTrack = "should pursue the Java/Android track!";
-    var tieTrack = "can't decide between the PHP/Drupal or the Java/Android tracks. Try this question to break the tie!"
+    var tieTrack = "can't decide between the PHP/Drupal or the Java/Android tracks!";
 
     if (name) {
       if (track) {
         if (track >= 13) {
           $("#track").empty().append(phpTrack);
-        } else if (track === 11) {
+        } else if (track === 10) {
           $("#track").empty().append(tieTrack);
         } else if (track >= 8) {
             $("#track").empty().append(cssTrack);
@@ -40,10 +31,10 @@ $(function() {
         $(".name").empty().append(name);
         $("#output").fadeIn();
       } else {
-        alert("Please pick some options!")
+        alert("Please pick some options!");
       }
     } else {
-      alert("You forgot to enter your name!")
+      alert("You forgot to enter your name!");
     }
     event.preventDefault();
   });

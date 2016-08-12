@@ -19,7 +19,8 @@ _You can just press this: [Track Suggester](https://cgrahams.github.io/track-sug
 
 ## Known Bugs
 
-_Survey breaks at track values 8, 11 and 23 due to overlapping track values_
+_Depending on the options selected, survey breaks at track values 8, 11 and 23 due to overlapping track values.
+Will display CSS track with only one CSS related option selected three values of 1, one value of 3 and one value of 2 are selected._
 
 ## Support and contact details
 
