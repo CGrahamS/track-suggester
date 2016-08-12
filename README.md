@@ -19,7 +19,7 @@ _You can just press this: [Track Suggester](https://cgrahams.github.io/track-sug
 
 ## Known Bugs
 
-_None_
+_Result ranges are not exact. Survey breaks at certain answer combos on track values 11, 8 and 23_
 
 ## Support and contact details
 

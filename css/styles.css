@@ -5,7 +5,8 @@
 .page-header,
 .my-intro p,
 .my-intro h3,
-#survey-title {
+#survey-title,
+#my-footer {
   text-align: center;
 }
 
