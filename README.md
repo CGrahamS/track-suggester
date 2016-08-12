@@ -1,23 +1,25 @@
-# _{Application Name}_
+# _Track Suggester_
 
-#### _{Brief description of application}, {Date of current version}_
+#### _A webpage that determines the appropriate track for the user through a brief survey, 8-12-2016_
 
 #### By _**Caleb Stevenson**_
 
 ## Description
 
-_{This is a detailed description of your application. Its purpose and usage.  Give as much detail as needed to explain what the application does, and any other information you want users or other developers to have. }_
+_This webpage will implement html, css, BootStrap styles, JavaScript and the jQuery library to provide a form that intakes data from the user, processes that data and returns a matching track to the user via an unveiled section of the page_
 
 ## Setup/Installation Requirements
 
 * _Clone this repository to your desktop_
 * _Open index.html in the browser of your choosing_
 
-_You must host this webpage locally_
+_OR_
+
+_You can just press this: [Track Suggester](https://cgrahams.github.io/track-suggester/index.html)_
 
 ## Known Bugs
 
-_None yet_
+_None_
 
 ## Support and contact details
 
@@ -27,7 +29,9 @@ _None yet_
 
 _HTML,
 CSS,
-JS,_
+BootStrap,
+JS,
+jQuery_
 
 ### License
 
