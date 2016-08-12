@@ -1,5 +1,5 @@
 //back end
-var result = function(music, vaction, beer, weapon, taco) {
+var result = function(music, vacation, beer, weapon, taco) {
   return music + vacation + beer + weapon + taco;
 };
 
@@ -15,13 +15,15 @@ $(function() {
     var track = result(music, vacation, beer, weapon, taco);
 
     if (track >= 40) {
-      $("#track").empty().append("PHP/Drupal track!")
+      $("#track").empty().append("PHP/Drupal track!");
     } else if (track >= 25) {
-      $("#track").empty().append("CSS/Design track!")
+      $("#track").empty().append("CSS/Design track!");
     } else {
-      $("#track").empty().append("Java/Android track!")
+      $("#track").empty().append("Java/Android track!");
     }
 
+    $(".name").empty().append(name);
+    $("#output").show();
     event.preventDefault();
   });
 });
