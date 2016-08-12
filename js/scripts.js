@@ -16,14 +16,14 @@ $(function() {
 
     if (track >= 40) {
       $("#track").empty().append("PHP/Drupal track!");
-    } else if (track >= 25) {
+    } else if (track >= 17) {
       $("#track").empty().append("CSS/Design track!");
     } else {
       $("#track").empty().append("Java/Android track!");
     }
 
     $(".name").empty().append(name);
-    $("#output").show();
+    $("#output").slideDown();
     event.preventDefault();
   });
 });
