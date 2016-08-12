@@ -10,11 +10,11 @@ var result = function(music, vacation, beer, weapon, taco) {
 $(function() {
   $("#blanks form").submit(function(event) {
     var name = $("input#name").val();
-    var music = parseInt($("input:radio[name=music]:checked").val());
-    var vacation = parseInt($("input:radio[name=vacation]:checked").val());
-    var beer = parseInt($("input:radio[name=beer]:checked").val());
-    var weapon = parseInt($("input:radio[name=weapon]:checked").val());
-    var taco = parseInt($("input:radio[name=taco]:checked").val());
+    var music = $("input:radio[name=music]:checked").val();
+    var vacation = $("input:radio[name=vacation]:checked").val();
+    var beer = $("input:radio[name=beer]:checked").val();
+    var weapon = ("input:radio[name=weapon]:checked").val();
+    var taco = $("input:radio[name=taco]:checked").val();
     var track = result(music, vacation, beer, weapon, taco);
     var phpTrack = "should pursue the PHP/Drupal track!";
     var cssTrack = "should pursue the CSS/Design track!";
@@ -22,14 +22,14 @@ $(function() {
     var tieTrack = "can't decide between the PHP/Drupal or the Java/Android tracks. Try this question to break the tie!"
 
     console.log(track);
-    if (track >= 13) {
-      $("#track").empty().append(phpTrack);
+    if (track === "aaaaa" || "aaaab" || "aaabb" || "baaab" || "baaba" || "babaa" || "aabaa") {
+      $("#track").empty().append(javaTrack);
     } else if (track === 11) {
       $("#track").empty().append(tieTrack);
     } else if (track >= 8) {
         $("#track").empty().append(cssTrack);
     } else {
-      $("#track").empty().append(javaTrack);
+      $("#track").empty().append(phpTrack);
     }
 
     $(".name").empty().append(name);
