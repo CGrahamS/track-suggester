@@ -2,8 +2,12 @@
 var result = function(music, vacation, beer, weapon, taco) {
   return music + vacation + beer + weapon + taco;
 };
-
-
+var toCss = function(category) {
+   return category +1;
+ };
+var toPhp = function(category) {
+  return category +10;
+};
 
 
 //front end

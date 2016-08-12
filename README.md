@@ -19,7 +19,7 @@ _You can just press this: [Track Suggester](https://cgrahams.github.io/track-sug
 
 ## Known Bugs
 
-_None_
+_Survey breaks at track values 8, 11 and 23 due to overlapping track values_
 
 ## Support and contact details
 
