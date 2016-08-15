@@ -20,12 +20,14 @@ $(function() {
     var beer = $("input:radio[name=beer]:checked").val();
     var weapon = $("input:radio[name=weapon]:checked").val();
     var taco = $("input:radio[name=taco]:checked").val();
+    var martial = $("input:radio[name=martial]:checked").val();
 
     whichTrack(music);
     whichTrack(vacation);
     whichTrack(beer);
     whichTrack(weapon);
     whichTrack(taco);
+    whichTrack(martial);
     if (name) {
       if (track) {
         if (javaTrack > cssTrack && javaTrack > phpTrack) {
