@@ -11,7 +11,6 @@ var whichTrack = function(answer) {
   }
 }
 
-
 $(function() {
   $("#blanks form").submit(function(event) {
     var name = $("input#name").val();
@@ -27,21 +26,25 @@ $(function() {
     whichTrack(beer);
     whichTrack(weapon);
     whichTrack(taco);
-    whichTrack(martial);
     if (name) {
       if (track) {
         if (javaTrack > cssTrack && javaTrack > phpTrack) {
-          $("#track").empty().append("java");
-        } else if (javaTrack === cssTrack || javaTrack === phpTrack || cssTrack === phpTrack) {
-          $("#track").empty().append("tie");
+          $("#track").empty().append("should pursue the Java/Android track!");
+        } else if (javaTrack === cssTrack && javaTrack > phpTrack) {
+          $("#track").empty().append("can't decide between the Java/Android and the CSS/Design tracks. Try the quiz again!");
+        } else if (cssTrack === phpTrack && cssTrack > javaTrack) {
+          $("#track").empty().append("can't decide between the CSS/Design and the PHP/Drupal tracks. Try the quiz again!");
+        } else if (phpTrack === javaTrack && phpTrack > cssTrack) {
+          $("#track").empty().append("can't decide between the Java/Android and the PHP/Drupal tracks. Try the quiz again!")
         } else if (cssTrack > javaTrack && cssTrack > phpTrack) {
-            $("#track").empty().append("css");
+          $("#track").empty().append("should pursue the CSS/Design track!");
         } else if (phpTrack > javaTrack && phpTrack > cssTrack) {
-          $("#track").empty().append("php");
+          $("#track").empty().append("should pursue the PHP/Drupal track!");
         }
-
+        console.log(javaTrack, cssTrack, phpTrack);
         $(".name").empty().append(name);
         $("#output").fadeIn();
+        console.log();
         javaTrack = 0;
         cssTrack = 0;
         phpTrack = 0;
